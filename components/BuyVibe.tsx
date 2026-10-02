@@ -12,7 +12,7 @@ export default function BuyVibe({ heading }: { heading: string }) {
             <span className="text-gradient-gold">{heading}</span>
           </h1>
           <p className="text-xl text-[var(--text-secondary)] mb-6">
-            You can buy testnet VIBE in Alpha GO with Bitcoin, Ether or Aptos.
+            You can buy testnet VIBE in Alpha GO with Bitcoin, USDT or Aptos.
             The presale price is $0.01 per VIBE.
           </p>
           <p className="text-[var(--text-secondary)] mb-8">

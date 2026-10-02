@@ -262,7 +262,7 @@ export default function Home() {
             Buy VIBE at <span className="text-gradient-gold">$0.01</span>
           </h2>
           <p className="text-[var(--text-secondary)] text-lg mb-8">
-            Buy testnet VIBE in Alpha GO with Bitcoin, Ether or Aptos. Spend it on the
+            Buy testnet VIBE in Alpha GO with Bitcoin, USDT or Aptos. Spend it on the
             Vibertas Dashboard. VIBE is not a share or a promise of future value.
           </p>
           <div className="bg-[var(--dark-card)] border border-[var(--gold)] rounded-lg p-6 max-w-lg mx-auto mb-8 glow-gold">
