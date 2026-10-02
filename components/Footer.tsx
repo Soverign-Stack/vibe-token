@@ -137,7 +137,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-[var(--text-primary)] font-semibold mb-4">Backed By</h3>
+            <h3 className="text-[var(--text-primary)] font-semibold mb-4">Built by</h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -202,7 +202,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} VIBE Token. Part of the <span className="text-[var(--sovereign-gold)]">Sovereign Stack</span>.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
-            VIBE is offered by Powerclub Global LLC. Backed by <a href="https://www.okbventures.com" target="_blank" rel="noopener noreferrer" className="text-[var(--sovereign-gold)] hover:underline">OKB Ventures</a>
+            VIBE is offered by Powerclub Global LLC, founded by the managing partner of <a href="https://www.okbventures.com" target="_blank" rel="noopener noreferrer" className="text-[var(--sovereign-gold)] hover:underline">OKB Ventures</a>
           </p>
         </div>
       </div>

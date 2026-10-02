@@ -29,7 +29,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient-gold">The Economics</span>
             <br />
-            <span className="text-[var(--text-primary)]">of Sovereignty</span>
+            <span className="text-white">of Sovereignty</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-[var(--text-secondary)] max-w-3xl mx-auto mb-8">
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">1B</div>
-              <div className="text-sm text-[var(--text-muted)]">Maximum Supply</div>
+              <div className="text-sm text-[var(--text-muted)]">Intended maximum at mainnet</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">Testnet</div>

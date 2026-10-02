@@ -27,11 +27,13 @@ export const metadata: Metadata = {
     description: "A testnet token on Aptos for use inside the Alpha Protocol ecosystem",
     type: "website",
     locale: "en_US",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "VIBE Token | The Economics of Sovereignty",
     description: "A testnet token on Aptos for use inside the Alpha Protocol ecosystem",
+    images: ["/opengraph-image"],
   },
 };
 

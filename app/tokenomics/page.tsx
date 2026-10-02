@@ -35,8 +35,8 @@ export default function Tokenomics() {
           <div className="max-w-md mx-auto">
             <div className="card text-center">
               <div className="text-4xl font-bold text-gradient-gold mb-2">1,000,000,000</div>
-              <div className="text-lg text-[var(--text-primary)] mb-1">Maximum Supply</div>
-              <div className="text-sm text-[var(--text-muted)]">1 billion maximum supply</div>
+              <div className="text-lg text-[var(--text-primary)] mb-1">Intended maximum at mainnet</div>
+              <div className="text-sm text-[var(--text-muted)]">On the Aptos testnet today 1,002,000,000 VIBE exist, and the testnet contract does not enforce a cap. The maximum is a policy we keep to, not a rule the code enforces. About 88.6% is in the contract&apos;s admin account and about 11% in a second company-controlled wallet; the admin key can create and remove VIBE and upgrade the contract. We will publish how those powers are limited before mainnet.</div>
             </div>
           </div>
         </div>
