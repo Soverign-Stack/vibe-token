@@ -58,13 +58,13 @@ export default function EarnSpend() {
               <div className="text-3xl mb-4">&#128640;</div>
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Refer Others</h3>
               <p className="text-[var(--text-secondary)] mb-4">
-                Bring new users and node operators to the network.
-                Earn a percentage of their contributions.
+                Invite someone to Alpha GO. You are credited when
+                they create an account.
               </p>
               <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Referral Bonus</div>
-                <div className="text-lg text-[var(--vibe-green)]">5% of earnings</div>
-                <div className="text-xs text-[var(--text-muted)]">For first year</div>
+                <div className="text-sm text-[var(--text-muted)] mb-1">Invite reward</div>
+                <div className="text-lg text-[var(--vibe-green)]">250 testnet VIBE</div>
+                <div className="text-xs text-[var(--text-muted)]">Per person who joins</div>
               </div>
             </div>
 
@@ -76,9 +76,9 @@ export default function EarnSpend() {
                 create tools for the ecosystem.
               </p>
               <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Developer Grants</div>
-                <div className="text-lg text-[var(--vibe-green)]">Up to 100K VIBE</div>
-                <div className="text-xs text-[var(--text-muted)]">Per approved project</div>
+                <div className="text-sm text-[var(--text-muted)] mb-1">Developer grants</div>
+                <div className="text-lg text-[var(--vibe-green)]">Planned</div>
+                <div className="text-xs text-[var(--text-muted)]">Amounts not set yet</div>
               </div>
             </div>
 
@@ -90,9 +90,9 @@ export default function EarnSpend() {
                 Earn rewards based on severity.
               </p>
               <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Bounty Range</div>
-                <div className="text-lg text-[var(--vibe-green)]">100 - 50K VIBE</div>
-                <div className="text-xs text-[var(--text-muted)]">Based on severity</div>
+                <div className="text-sm text-[var(--text-muted)] mb-1">Bug bounties</div>
+                <div className="text-lg text-[var(--vibe-green)]">Planned</div>
+                <div className="text-xs text-[var(--text-muted)]">Amounts not set yet</div>
               </div>
             </div>
           </div>
