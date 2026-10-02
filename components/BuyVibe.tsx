@@ -67,9 +67,7 @@ export default function BuyVibe({ heading }: { heading: string }) {
           <div className="card">
             <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">What you receive</h2>
             <p className="text-[var(--text-secondary)] mb-3">
-              You receive testnet VIBE on the Aptos testnet. Today your purchase is
-              credited to your Alpha GO account. Delivery to your own Aptos testnet
-              address is being built.
+              You receive testnet VIBE. When your payment confirms, it goes on your Alpha GO account. Withdrawing it to your own Aptos testnet wallet, and spending it in the app, arrive with the next Alpha GO update.
             </p>
             <p className="text-[var(--text-secondary)]">
               Testnet VIBE is not a share, a security or a promise of future value.
