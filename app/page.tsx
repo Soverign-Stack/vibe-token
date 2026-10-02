@@ -119,8 +119,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Spend</h3>
               <p className="text-[var(--text-secondary)]">
-                Spending VIBE on network services, compute and privacy features is planned.
-                Today you can only buy it in Alpha GO.
+                Today you can spend VIBE on Topsi, the assistant in the Alpha GO app, and send it to other members. Spending it on network services, compute and privacy features is planned.
               </p>
             </div>
 

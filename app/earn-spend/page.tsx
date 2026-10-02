@@ -132,8 +132,7 @@ export default function EarnSpend() {
             </div>
             <h2 className="text-3xl font-bold mb-4">How VIBE may be spent</h2>
             <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
-              The only way to use VIBE today is to buy it in Alpha GO. None of
-              the uses below are live. They describe what we plan to build.
+              Today, in the Alpha GO app, you can spend VIBE on Topsi, the in-app assistant, send it to other members, and withdraw bought VIBE to your own Aptos testnet wallet. None of the uses below are live. They describe what we plan to build.
             </p>
           </div>
 
