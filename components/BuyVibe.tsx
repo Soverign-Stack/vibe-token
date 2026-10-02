@@ -1,5 +1,21 @@
 import Link from "next/link";
 
+const steps = [
+  "Create an Alpha GO account.",
+  "Choose a coin and an amount.",
+  "Send the exact amount shown.",
+  "Paste the transaction ID.",
+];
+
+const facts = [
+  { label: "Price", value: "$0.01 per VIBE" },
+  { label: "Rate", value: "100 VIBE per $1" },
+  { label: "Demo sale allocation", value: "1,000,000 VIBE" },
+  { label: "Limit per person", value: "100,000 VIBE ($1,000)" },
+  { label: "Minimum", value: "$25" },
+  { label: "Accepted coins", value: "Bitcoin, USDT on Ethereum (ERC-20) only, or APT on Aptos" },
+];
+
 export default function BuyVibe({ heading }: { heading: string }) {
   return (
     <div className="pt-16">
@@ -12,14 +28,63 @@ export default function BuyVibe({ heading }: { heading: string }) {
             <span className="text-gradient-gold">{heading}</span>
           </h1>
           <p className="text-xl text-[var(--text-secondary)] mb-6">
-            You can buy testnet VIBE in Alpha GO with Bitcoin, USDT or Aptos.
-            The presale price is $0.01 per VIBE.
+            This is a demo sale: an early, limited sale of testnet VIBE during the
+            TOKEN2049 demo. It is a presale of a testnet token, not of a mainnet token.
           </p>
-          <p className="text-[var(--text-secondary)] mb-8">
-            VIBE is a testnet token on the Aptos testnet, for use inside the Alpha
-            Protocol ecosystem. It is not a share or a promise of future value.
-            Alpha GO is the only place to buy it.
-          </p>
+          <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            Buy VIBE in Alpha GO
+          </a>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4 space-y-12">
+          <div className="card">
+            <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">Sale terms</h2>
+            <dl className="divide-y divide-[var(--dark-border)]">
+              {facts.map((f) => (
+                <div key={f.label} className="py-3 flex flex-col sm:flex-row sm:justify-between gap-1">
+                  <dt className="text-[var(--text-muted)]">{f.label}</dt>
+                  <dd className="text-[var(--text-primary)] sm:text-right">{f.value}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="text-sm text-[var(--text-muted)] mt-4">
+              Only 1,000,000 VIBE are offered in this demo sale. Maximum supply of VIBE is 1 billion.
+              VIBE can only be bought inside Alpha GO.
+            </p>
+          </div>
+
+          <div className="card">
+            <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">How to buy</h2>
+            <ol className="list-decimal pl-6 space-y-2 text-[var(--text-secondary)]">
+              {steps.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="card">
+            <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">What you receive</h2>
+            <p className="text-[var(--text-secondary)] mb-3">
+              You receive testnet VIBE on the Aptos testnet. Today your purchase is
+              credited to your Alpha GO account. Delivery to your own Aptos testnet
+              address is being built.
+            </p>
+            <p className="text-[var(--text-secondary)]">
+              Testnet VIBE is not a share, a security or a promise of future value.
+              Allocation and vesting are being finalised and will be published before mainnet.
+            </p>
+          </div>
+
+          <div className="card">
+            <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">Who sells it</h2>
+            <p className="text-[var(--text-secondary)]">
+              VIBE is sold by Powerclub Global LLC. Questions:{" "}
+              <a href="mailto:apn@powerclubglobal.com" className="text-[var(--gold)] hover:underline">apn@powerclubglobal.com</a>.
+            </p>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Buy VIBE in Alpha GO

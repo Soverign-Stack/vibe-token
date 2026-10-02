@@ -22,14 +22,14 @@ const ecosystemProjects = [
   {
     id: "vibe",
     name: "VIBE Token",
-    url: "#",
+    url: "/",
     color: "#22c55e",
     current: true,
   },
   {
     id: "vibeland",
     name: "VIBELAND",
-    url: "https://vibeland.com",
+    url: "https://vibeland-web.vercel.app",
     color: "#3b82f6",
   },
   {
@@ -93,6 +93,16 @@ export default function Footer() {
               <li>
                 <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
                   Buy VIBE
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/+ccm4dRdIdVsxYmYx" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a href="mailto:apn@powerclubglobal.com" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -192,7 +202,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} VIBE Token. Part of the <span className="text-[var(--sovereign-gold)]">Sovereign Stack</span>.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
-            Backed by <a href="https://okb-ventures.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--sovereign-gold)] hover:underline">OKB Ventures</a>
+            VIBE is offered by Powerclub Global LLC. Backed by <a href="https://okb-ventures.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--sovereign-gold)] hover:underline">OKB Ventures</a>
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "VIBE Token | The Economics of Sovereignty",
     template: "%s | VIBE Token"
   },
-  description: "VIBE is a testnet token on Aptos for use inside the Alpha Protocol ecosystem. Not a share or a promise of future value.",
+  description: "VIBE is a testnet token on Aptos for use inside the Alpha Protocol ecosystem. Not a share, a security or a promise of future value.",
   keywords: ["VIBE", "token", "cryptocurrency", "Alpha Protocol", "Aptos", "decentralized", "mesh network", "economics"],
   authors: [{ name: "Alpha Protocol" }],
   openGraph: {

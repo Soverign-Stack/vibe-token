@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="pt-16">
@@ -39,9 +41,9 @@ export default function Home() {
             <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Buy VIBE in Alpha GO
             </a>
-            <a href="https://vibertas-os.vercel.app" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              Spend on Vibertas
-            </a>
+            <Link href="/presale" className="btn-secondary">
+              How the demo sale works
+            </Link>
           </div>
         </div>
 
@@ -59,7 +61,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">$0.01</div>
-              <div className="text-sm text-[var(--text-muted)]">Presale Price</div>
+              <div className="text-sm text-[var(--text-muted)]">Demo sale price</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">1B</div>
@@ -71,8 +73,14 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-[var(--vibe-green)] mb-2">Alpha GO</div>
-              <div className="text-sm text-[var(--text-muted)]">Presale</div>
+              <div className="text-sm text-[var(--text-muted)]">Demo sale, sold here only</div>
             </div>
+          </div>
+          <div className="mt-10 text-center text-sm text-[var(--text-muted)]">
+            <span className="font-semibold text-[var(--text-secondary)]">Verify on-chain:</span>{" "}
+            module <code>vibe_token</code> at{" "}
+            <a href="https://explorer.aptoslabs.com/account/0x24cb561c64c32942eb8600d5135f0185c23bcd06cd8cf33422ce2f9b77d65388/modules/code/vibe_token?network=testnet" target="_blank" rel="noopener noreferrer" title="0x24cb561c64c32942eb8600d5135f0185c23bcd06cd8cf33422ce2f9b77d65388" className="text-[var(--gold)] hover:underline">0x24cb56...65388</a>{" "}
+            on the Aptos testnet explorer. 8 decimals.
           </div>
         </div>
       </section>
@@ -85,8 +93,8 @@ export default function Home() {
               What is <span className="text-gradient-gold">VIBE</span>?
             </h2>
             <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
-              VIBE powers the economic layer of the Sovereign Stack, aligning incentives
-              across node operators, users, and developers.
+              VIBE is the planned economic layer of the Sovereign Stack. Today it is a testnet
+              token you can earn and buy in Alpha GO.
             </p>
           </div>
 
@@ -99,7 +107,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Earn</h3>
               <p className="text-[var(--text-secondary)]">
-                Contribute to the network by relaying traffic or running nodes to earn VIBE rewards.
+                Today you can earn testnet VIBE in Alpha GO for signing up, checking in at events and inviting others. Rewards for running nodes are planned.
               </p>
             </div>
 
@@ -111,8 +119,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Spend</h3>
               <p className="text-[var(--text-secondary)]">
-                Use VIBE to access premium network services, priority compute,
-                and enhanced privacy features.
+                Spending VIBE on network services, compute and privacy features is planned.
+                Today you can only buy it in Alpha GO.
               </p>
             </div>
 
@@ -124,7 +132,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Govern</h3>
               <p className="text-[var(--text-secondary)]">
-                Governance is planned for a later stage. Details will be published
+                Governance is planned for a later stage and is not live. Details will be published
                 when it is ready.
               </p>
             </div>
@@ -148,28 +156,29 @@ export default function Home() {
                 <li className="flex items-start gap-3">
                   <span className="text-[var(--gold)] mt-1">&#10003;</span>
                   <span className="text-[var(--text-secondary)]">
-                    <strong className="text-[var(--text-primary)]">Network Fees:</strong> Pay for
-                    compute tasks, data routing, and storage
+                    <strong className="text-[var(--text-primary)]">Network Fees:</strong> Paying for
+                    compute, data routing and storage. <span className="inline-block ml-2 align-middle px-2 py-0.5 rounded-full border border-[var(--vibe-orange)]/40 bg-[var(--vibe-orange)]/10 text-[var(--vibe-orange)] text-xs font-medium">Planned</span>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[var(--gold)] mt-1">&#10003;</span>
                   <span className="text-[var(--text-secondary)]">
-                    <strong className="text-[var(--text-primary)]">Node Rewards:</strong> Earn
-                    VIBE by relaying traffic and running nodes
+                    <strong className="text-[var(--text-primary)]">Node Rewards:</strong> Earning
+                    VIBE by relaying traffic and running nodes. <span className="inline-block ml-2 align-middle px-2 py-0.5 rounded-full border border-[var(--vibe-orange)]/40 bg-[var(--vibe-orange)]/10 text-[var(--vibe-orange)] text-xs font-medium">Planned</span>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[var(--gold)] mt-1">&#10003;</span>
                   <span className="text-[var(--text-secondary)]">
-                    <strong className="text-[var(--text-primary)]">Governance:</strong> Planned
-                    for a later stage
+                    <strong className="text-[var(--text-primary)]">Governance:</strong> <span className="inline-block ml-2 align-middle px-2 py-0.5 rounded-full border border-[var(--vibe-orange)]/40 bg-[var(--vibe-orange)]/10 text-[var(--vibe-orange)] text-xs font-medium">Planned</span>
+                    Not live, for a later stage
                   </span>
                 </li>
               </ul>
             </div>
             <div className="bg-[var(--dark-card)] border border-[var(--dark-border)] rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-6">Token Flow</h3>
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Token Flow</h3>
+              <p className="text-sm text-[var(--text-muted)] mb-6">How VIBE is intended to move. Node rewards and spending are planned.</p>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[var(--vibe-green)]/10 flex items-center justify-center text-[var(--vibe-green)]">
@@ -177,7 +186,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold text-[var(--text-primary)]">Earn VIBE</div>
-                    <div className="text-sm text-[var(--text-muted)]">Relaying traffic, running nodes</div>
+                    <div className="text-sm text-[var(--text-muted)]">Today: Alpha GO rewards. Planned: running nodes</div>
                   </div>
                 </div>
                 <div className="w-px h-8 bg-[var(--gold)]/30 ml-6" />
@@ -187,7 +196,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold text-[var(--text-primary)]">Hold</div>
-                    <div className="text-sm text-[var(--text-muted)]">Keep VIBE in your wallet</div>
+                    <div className="text-sm text-[var(--text-muted)]">Held in your Alpha GO account today</div>
                   </div>
                 </div>
                 <div className="w-px h-8 bg-[var(--gold)]/30 ml-6" />
@@ -197,7 +206,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold text-[var(--text-primary)]">Spend VIBE</div>
-                    <div className="text-sm text-[var(--text-muted)]">Services, priority, features</div>
+                    <div className="text-sm text-[var(--text-muted)]">Planned: services, priority, features</div>
                   </div>
                 </div>
               </div>
@@ -262,11 +271,11 @@ export default function Home() {
             Buy VIBE at <span className="text-gradient-gold">$0.01</span>
           </h2>
           <p className="text-[var(--text-secondary)] text-lg mb-8">
-            Buy testnet VIBE in Alpha GO with Bitcoin, USDT or Aptos. Spend it on the
-            Vibertas Dashboard. VIBE is not a share or a promise of future value.
+            Buy testnet VIBE in Alpha GO with Bitcoin, USDT (on Ethereum) or Aptos. Spending on
+            the Vibertas Dashboard is planned. VIBE is not a share, a security or a promise of future value.
           </p>
           <div className="bg-[var(--dark-card)] border border-[var(--gold)] rounded-lg p-6 max-w-lg mx-auto mb-8 glow-gold">
-            <div className="text-sm text-[var(--gold)] mb-4 font-semibold">Presale pricing</div>
+            <div className="text-sm text-[var(--gold)] mb-4 font-semibold">Demo sale pricing</div>
             <div className="grid grid-cols-2 gap-6 text-left">
               <div>
                 <div className="text-3xl font-bold text-[var(--gold)]">$0.01</div>
@@ -279,7 +288,7 @@ export default function Home() {
             </div>
             <div className="mt-6 pt-4 border-t border-[var(--dark-border)]">
               <div className="text-sm text-[var(--text-secondary)]">
-                Spend on <a href="https://vibertas-os.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] hover:underline">Vibertas Dashboard</a>
+                Spending on the Vibertas Dashboard <span className="inline-block ml-2 align-middle px-2 py-0.5 rounded-full border border-[var(--vibe-orange)]/40 bg-[var(--vibe-orange)]/10 text-[var(--vibe-orange)] text-xs font-medium">Planned</span>
               </div>
             </div>
           </div>
@@ -287,9 +296,9 @@ export default function Home() {
             <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Buy VIBE in Alpha GO
             </a>
-            <a href="https://vibertas-os.vercel.app" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              Visit Vibertas
-            </a>
+            <Link href="/presale" className="btn-secondary">
+              Demo sale details
+            </Link>
           </div>
         </div>
       </section>

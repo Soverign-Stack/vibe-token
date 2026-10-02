@@ -3,7 +3,7 @@ import BuyVibe from "@/components/BuyVibe";
 
 export const metadata: Metadata = {
   title: "Buy VIBE",
-  description: "Buy testnet VIBE in Alpha GO with Bitcoin, USDT or Aptos at $0.01 per VIBE.",
+  description: "Buy testnet VIBE in a demo sale inside Alpha GO at $0.01 per VIBE, with Bitcoin, USDT (on Ethereum) or Aptos.",
 };
 
 export default function Invest() {

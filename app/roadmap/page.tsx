@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 const stages = [
   {
     label: "Now",
-    text: "Testnet token on Aptos, used inside Alpha GO and our own tools.",
+    text: "Testnet token on Aptos. Earn it and buy it in Alpha GO.",
     current: true,
   },
   {
     label: "Next",
-    text: "Rewards for node operators on the seed network.",
+    text: "Planned: rewards for node operators on the seed network, and governance.",
   },
   {
     label: "Later",

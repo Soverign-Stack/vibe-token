@@ -41,7 +41,7 @@ const ecosystemProjects = [
     name: "VIBE Token",
     shortName: "VIBE",
     description: "Ecosystem Rewards - Value for Contributors",
-    url: "#",
+    url: "/",
     color: "#22c55e",
   },
   {
@@ -49,7 +49,7 @@ const ecosystemProjects = [
     name: "VIBELAND",
     shortName: "VIBELAND",
     description: "The Sovereign Metaverse - Immersive 3D Worlds",
-    url: "https://vibeland.com",
+    url: "https://vibeland-web.vercel.app",
     color: "#3b82f6",
   },
   {

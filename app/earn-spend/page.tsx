@@ -3,8 +3,68 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Earn & Spend",
-  description: "Learn how to earn testnet VIBE by contributing to the Alpha Protocol Network, and how it is used on network services.",
+  description: "What you can do with testnet VIBE today in Alpha GO, and what is planned for later.",
 };
+
+function Planned() {
+  return (
+    <span className="inline-block ml-2 align-middle px-2 py-0.5 rounded-full border border-[var(--vibe-orange)]/40 bg-[var(--vibe-orange)]/10 text-[var(--vibe-orange)] text-xs font-medium">
+      Planned
+    </span>
+  );
+}
+
+const earnToday = [
+  { title: "Sign up", text: "Create an Alpha GO account and receive testnet VIBE.", amount: "500 testnet VIBE", note: "Per new account" },
+  { title: "Check in at events", text: "Check in at an event in Alpha GO.", amount: "100 testnet VIBE", note: "Per event check-in" },
+  { title: "Invite others", text: "Invite someone to Alpha GO. You are credited when they create an account.", amount: "250 testnet VIBE", note: "Per person who joins" },
+];
+
+const earnPlanned = [
+  { title: "Run a node or relay", text: "Rewards for running an Omega Router or Relay on the network are planned. They are not live." },
+  { title: "Contribute compute", text: "Rewards for sharing idle compute with Pythia AI are planned." },
+  { title: "Developer grants", text: "Grants for people who build on the ecosystem are planned. Amounts are not set." },
+  { title: "Bug bounties", text: "Rewards for reporting security vulnerabilities are planned. Amounts are not set." },
+];
+
+const spendPlanned = [
+  {
+    heading: "Network services",
+    items: [
+      { name: "Priority routing", desc: "Faster data transfer and lower latency" },
+      { name: "Enhanced privacy", desc: "Additional encryption layers and mixnets" },
+      { name: "Decentralized storage", desc: "Encrypted, redundant data storage" },
+      { name: "Satellite backhaul", desc: "Connectivity via Spectrum Galactic" },
+    ],
+  },
+  {
+    heading: "AI and compute",
+    items: [
+      { name: "Pythia AI tasks", desc: "AI inference and data processing" },
+      { name: "Model training", desc: "Federated learning compute credits" },
+      { name: "GPU rendering", desc: "Distributed graphics processing" },
+      { name: "Priority compute", desc: "Faster scheduling for urgent tasks" },
+    ],
+  },
+  {
+    heading: "Governance",
+    items: [
+      { name: "Protocol voting", desc: "Vote on upgrades and parameters" },
+      { name: "Treasury proposals", desc: "Propose and vote on fund allocation" },
+      { name: "Grant applications", desc: "Apply for development funding" },
+    ],
+  },
+  {
+    heading: "Premium features",
+    items: [
+      { name: "Custom domains", desc: ".alpha domains" },
+      { name: "API access", desc: "Developer API rate limits" },
+      { name: "Enterprise SLA", desc: "Support terms for enterprise customers" },
+      { name: "Vibertas and Vibertas Dashboard", desc: "Paying for services in VIBE" },
+      { name: "Omega hardware", desc: "Buying Omega devices with VIBE" },
+    ],
+  },
+];
 
 export default function EarnSpend() {
   return (
@@ -16,8 +76,8 @@ export default function EarnSpend() {
             <span className="text-gradient-gold">Earn</span> & <span className="text-gradient-gold">Spend</span>
           </h1>
           <p className="text-xl text-[var(--text-secondary)]">
-            VIBE creates a circular economy where every participant can earn
-            by contributing value and spend to access network services.
+            Today you can earn testnet VIBE and buy it in Alpha GO. Everything
+            else on this page is planned and is marked as such.
           </p>
         </div>
       </section>
@@ -27,74 +87,38 @@ export default function EarnSpend() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--vibe-green)]/10 border border-[var(--vibe-green)]/30 rounded-full text-[var(--vibe-green)] text-sm mb-4">
-              Contribution Rewards
+              Live today in Alpha GO
             </div>
-            <h2 className="text-3xl font-bold mb-4">How to Earn VIBE</h2>
+            <h2 className="text-3xl font-bold mb-4">How to earn VIBE</h2>
             <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
-              Multiple ways to earn based on how you contribute to the network.
+              These rewards are paid in testnet VIBE and credited to your Alpha GO account.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="card border-t-4 border-t-[var(--vibe-green)]">
-              <div className="text-3xl mb-4">&#128187;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Run a Node</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Deploy an Omega Router or Relay to become a network node.
-                Earn VIBE for relaying traffic and providing connectivity.
-              </p>
-            </div>
-
-            <div className="card border-t-4 border-t-[var(--vibe-blue)]">
-              <div className="text-3xl mb-4">&#9889;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Contribute Compute</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Share your device&apos;s idle compute with Pythia AI.
-                Earn VIBE when your resources are used for AI tasks.
-              </p>
-            </div>
-
-            <div className="card border-t-4 border-t-[var(--vibe-purple)]">
-              <div className="text-3xl mb-4">&#128640;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Refer Others</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Invite someone to Alpha GO. You are credited when
-                they create an account.
-              </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Invite reward</div>
-                <div className="text-lg text-[var(--vibe-green)]">250 testnet VIBE</div>
-                <div className="text-xs text-[var(--text-muted)]">Per person who joins</div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {earnToday.map((e) => (
+              <div key={e.title} className="card border-t-4 border-t-[var(--vibe-green)]">
+                <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">{e.title}</h3>
+                <p className="text-[var(--text-secondary)] mb-4">{e.text}</p>
+                <div className="bg-[var(--dark-surface)] rounded-lg p-4">
+                  <div className="text-lg text-[var(--vibe-green)]">{e.amount}</div>
+                  <div className="text-xs text-[var(--text-muted)]">{e.note}</div>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
 
-            <div className="card border-t-4 border-t-[var(--vibe-orange)]">
-              <div className="text-3xl mb-4">&#128295;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Build & Develop</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Contribute to protocol development, build apps, or
-                create tools for the ecosystem.
-              </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Developer grants</div>
-                <div className="text-lg text-[var(--vibe-green)]">Planned</div>
-                <div className="text-xs text-[var(--text-muted)]">Amounts not set yet</div>
+          <h3 className="text-2xl font-bold text-center mt-20 mb-8">Planned ways to earn</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {earnPlanned.map((e) => (
+              <div key={e.title} className="card border-t-4 border-t-[var(--text-muted)]">
+                <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                  {e.title}
+                  <Planned />
+                </h3>
+                <p className="text-[var(--text-secondary)]">{e.text}</p>
               </div>
-            </div>
-
-            <div className="card border-t-4 border-t-[var(--text-muted)]">
-              <div className="text-3xl mb-4">&#128640;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Bug Bounties</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Find and report security vulnerabilities.
-                Earn rewards based on severity.
-              </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Bug bounties</div>
-                <div className="text-lg text-[var(--vibe-green)]">Planned</div>
-                <div className="text-xs text-[var(--text-muted)]">Amounts not set yet</div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -103,137 +127,36 @@ export default function EarnSpend() {
       <section className="py-24 bg-[var(--dark-surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--vibe-purple)]/10 border border-[var(--vibe-purple)]/30 rounded-full text-[var(--vibe-purple)] text-sm mb-4">
-              Network Services
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--vibe-orange)]/10 border border-[var(--vibe-orange)]/30 rounded-full text-[var(--vibe-orange)] text-sm mb-4">
+              Planned
             </div>
-            <h2 className="text-3xl font-bold mb-4">How to Spend VIBE</h2>
+            <h2 className="text-3xl font-bold mb-4">How VIBE may be spent</h2>
             <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
-              Use your VIBE to access premium services and features across the network.
+              The only way to use VIBE today is to buy it in Alpha GO. None of
+              the uses below are live. They describe what we plan to build.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="card">
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">Network Services</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Priority Routing</div>
-                    <div className="text-sm text-[var(--text-muted)]">Faster data transfer and lower latency</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Enhanced Privacy</div>
-                    <div className="text-sm text-[var(--text-muted)]">Additional encryption layers and mixnets</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Decentralized Storage</div>
-                    <div className="text-sm text-[var(--text-muted)]">Encrypted, redundant data storage</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Satellite Backhaul</div>
-                    <div className="text-sm text-[var(--text-muted)]">Global connectivity via Spectrum Galactic</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">AI & Compute</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Pythia AI Tasks</div>
-                    <div className="text-sm text-[var(--text-muted)]">Run AI inference and data processing</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Model Training</div>
-                    <div className="text-sm text-[var(--text-muted)]">Federated learning compute credits</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">GPU Rendering</div>
-                    <div className="text-sm text-[var(--text-muted)]">Distributed graphics processing</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Priority Compute</div>
-                    <div className="text-sm text-[var(--text-muted)]">Jump the queue for urgent tasks</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">Governance</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Protocol Voting</div>
-                    <div className="text-sm text-[var(--text-muted)]">Vote on upgrades and parameters</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Treasury Proposals</div>
-                    <div className="text-sm text-[var(--text-muted)]">Propose and vote on fund allocation</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Grant Applications</div>
-                    <div className="text-sm text-[var(--text-muted)]">Apply for development funding</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">Premium Features</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Custom Domains</div>
-                    <div className="text-sm text-[var(--text-muted)]">Register .alpha domains</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">API Access</div>
-                    <div className="text-sm text-[var(--text-muted)]">Developer API rate limits</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--gold)]">&#9679;</span>
-                  <div>
-                    <div className="font-medium text-[var(--text-primary)]">Enterprise SLA</div>
-                    <div className="text-sm text-[var(--text-muted)]">Guaranteed uptime and support</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            {spendPlanned.map((group) => (
+              <div key={group.heading} className="card">
+                <h3 className="text-xl font-semibold text-[var(--gold)] mb-4">{group.heading}</h3>
+                <ul className="space-y-4">
+                  {group.items.map((item) => (
+                    <li key={item.name} className="flex items-start gap-3">
+                      <span className="text-[var(--gold)]">&#9679;</span>
+                      <div>
+                        <div className="font-medium text-[var(--text-primary)]">
+                          {item.name}
+                          <Planned />
+                        </div>
+                        <div className="text-sm text-[var(--text-muted)]">{item.desc}</div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -242,20 +165,15 @@ export default function EarnSpend() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Start <span className="text-gradient-gold">contributing</span>
+            Try it in <span className="text-gradient-gold">Alpha GO</span>
           </h2>
           <p className="text-[var(--text-secondary)] text-lg mb-8">
-            Get an Omega device and start relaying traffic or running a node on the network.
-            VIBE is a testnet token and not a share or a promise of future value.
+            Earn or buy testnet VIBE in Alpha GO. VIBE is a testnet token and not a
+            share, a security or a promise of future value.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://omegawireless.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Get Omega Hardware
+            <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary">
+              Buy VIBE in Alpha GO
             </a>
             <Link href="/tokenomics" className="btn-secondary">
               View Tokenomics
