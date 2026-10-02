@@ -101,7 +101,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:apn@powerclubglobal.com" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
+                <a href="mailto:hello@alphaprotocol.network" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
                   Contact
                 </a>
               </li>

@@ -79,7 +79,7 @@ export default function BuyVibe({ heading }: { heading: string }) {
             <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">Who sells it</h2>
             <p className="text-[var(--text-secondary)]">
               VIBE is sold by Powerclub Global LLC. Questions:{" "}
-              <a href="mailto:apn@powerclubglobal.com" className="text-[var(--gold)] hover:underline">apn@powerclubglobal.com</a>.
+              <a href="mailto:hello@alphaprotocol.network" className="text-[var(--gold)] hover:underline">hello@alphaprotocol.network</a>.
             </p>
           </div>
 
