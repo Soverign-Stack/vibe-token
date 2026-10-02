@@ -5,11 +5,10 @@ import { useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Presale", href: "/presale" },
+  { label: "Buy VIBE", href: "/presale" },
   { label: "Tokenomics", href: "/tokenomics" },
   { label: "Earn & Spend", href: "/earn-spend" },
   { label: "Roadmap", href: "/roadmap" },
-  { label: "Invest", href: "/invest" },
 ];
 
 const ecosystemProjects = [
@@ -18,7 +17,7 @@ const ecosystemProjects = [
     name: "Alpha Protocol",
     shortName: "Alpha",
     description: "Protocol Foundation - Enabling P2P Connections",
-    url: "https://alphaprotocol.network",
+    url: "https://www.alphaprotocol.network",
     color: "#dc2626",
   },
   {
@@ -222,9 +221,9 @@ export default function Header() {
             <span className="text-sm text-[var(--vibe-green)] font-medium">
               $0.01/VIBE
             </span>
-            <Link href="/presale" className="btn-primary text-sm">
+            <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
               Buy Now
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -340,13 +339,15 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/presale"
+            <a
+              href="https://go.alphaprotocol.network/vibe"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="block btn-primary text-center mt-4"
             >
-              Buy Now - $0.01
-            </Link>
+              Buy Now, $0.01
+            </a>
           </nav>
         </div>
       )}

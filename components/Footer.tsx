@@ -4,7 +4,7 @@ const ecosystemProjects = [
   {
     id: "alpha",
     name: "Alpha Protocol",
-    url: "https://alphaprotocol.network",
+    url: "https://www.alphaprotocol.network",
     color: "#dc2626",
   },
   {
@@ -63,11 +63,11 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[var(--text-secondary)] text-sm mb-4">
-              The reward token powering incentives and value exchange across the Sovereign Stack ecosystem.
+              A testnet token for use inside the Alpha Protocol ecosystem. Not a share or a promise of future value.
             </p>
             <div className="flex items-center gap-2 text-sm">
               <span className="w-2 h-2 rounded-full bg-[var(--vibe-green)] animate-pulse" />
-              <span className="text-[var(--text-muted)]">Live on Aptos Testnet</span>
+              <span className="text-[var(--text-muted)]">Testnet token on Aptos</span>
             </div>
           </div>
 
@@ -91,9 +91,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/invest" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
+                <a href="https://go.alphaprotocol.network/vibe" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors">
                   Buy VIBE
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -136,7 +136,17 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors"
                 >
-                  PowerClub Global
+                  Powerclub Global
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.alphaprotocol.network"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[var(--text-muted)] hover:text-[var(--vibe-primary)] transition-colors"
+                >
+                  Alpha Protocol Network
                 </a>
               </li>
               <li>

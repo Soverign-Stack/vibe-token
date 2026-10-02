@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Earn & Spend",
-  description: "Learn how to earn VIBE tokens by contributing to the Alpha Protocol Network, and how to spend them on network services.",
+  description: "Learn how to earn testnet VIBE by contributing to the Alpha Protocol Network, and how it is used on network services.",
 };
 
 export default function EarnSpend() {
@@ -41,13 +41,8 @@ export default function EarnSpend() {
               <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Run a Node</h3>
               <p className="text-[var(--text-secondary)] mb-4">
                 Deploy an Omega Router or Relay to become a network node.
-                Earn VIBE for routing traffic and providing connectivity.
+                Earn VIBE for relaying traffic and providing connectivity.
               </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Estimated Earnings</div>
-                <div className="text-lg text-[var(--vibe-green)]">50-200 VIBE/day</div>
-                <div className="text-xs text-[var(--text-muted)]">Varies by traffic and uptime</div>
-              </div>
             </div>
 
             <div className="card border-t-4 border-t-[var(--vibe-blue)]">
@@ -57,25 +52,6 @@ export default function EarnSpend() {
                 Share your device&apos;s idle compute with Pythia AI.
                 Earn VIBE when your resources are used for AI tasks.
               </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Estimated Earnings</div>
-                <div className="text-lg text-[var(--vibe-green)]">10-100 VIBE/day</div>
-                <div className="text-xs text-[var(--text-muted)]">Based on GPU/CPU capacity</div>
-              </div>
-            </div>
-
-            <div className="card border-t-4 border-t-[var(--gold)]">
-              <div className="text-3xl mb-4">&#128176;</div>
-              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">Stake VIBE</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Lock your VIBE to earn staking rewards and unlock
-                higher tier benefits and governance power.
-              </p>
-              <div className="bg-[var(--dark-surface)] rounded-lg p-4">
-                <div className="text-sm text-[var(--text-muted)] mb-1">Annual Yield</div>
-                <div className="text-lg text-[var(--vibe-green)]">5-18% APY</div>
-                <div className="text-xs text-[var(--text-muted)]">Based on staking tier</div>
-              </div>
             </div>
 
             <div className="card border-t-4 border-t-[var(--vibe-purple)]">
@@ -266,11 +242,11 @@ export default function EarnSpend() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Start <span className="text-gradient-gold">Earning</span> Today
+            Start <span className="text-gradient-gold">contributing</span>
           </h2>
           <p className="text-[var(--text-secondary)] text-lg mb-8">
-            Get an Omega device and start contributing to the network.
-            The more you contribute, the more you earn.
+            Get an Omega device and start relaying traffic or running a node on the network.
+            VIBE is a testnet token and not a share or a promise of future value.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
