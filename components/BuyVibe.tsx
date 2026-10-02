@@ -67,7 +67,7 @@ export default function BuyVibe({ heading }: { heading: string }) {
           <div className="card">
             <h2 className="text-2xl font-bold text-[var(--gold)] mb-4">What you receive</h2>
             <p className="text-[var(--text-secondary)] mb-3">
-              You receive testnet VIBE. When your payment confirms, it goes on your Alpha GO account. Withdrawing it to your own Aptos testnet wallet, and spending it in the app, arrive with the next Alpha GO update.
+              You receive testnet VIBE. When your payment confirms, it goes on your Alpha GO account. From the Alpha GO app you can send it to other members or withdraw it to your own Aptos testnet wallet (Petra or similar). Withdrawals have a minimum and a daily limit. VIBE you earn for signing up, checking in or inviting people can be spent in the app, but cannot be sent to other members or withdrawn.
             </p>
             <p className="text-[var(--text-secondary)]">
               Testnet VIBE is not a share, a security or a promise of future value.
