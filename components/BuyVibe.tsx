@@ -10,7 +10,7 @@ const steps = [
 const facts = [
   { label: "Price", value: "$0.01 per VIBE" },
   { label: "Rate", value: "100 VIBE per $1" },
-  { label: "Demo sale allocation", value: "1,000,000 VIBE" },
+  { label: "Set aside for this event", value: "1,000,000 VIBE" },
   { label: "Limit per person", value: "100,000 VIBE ($1,000)" },
   { label: "Minimum", value: "$25" },
   { label: "Accepted coins", value: "Bitcoin, USDT on Ethereum (ERC-20) only, or APT on Aptos" },
@@ -50,7 +50,7 @@ export default function BuyVibe({ heading }: { heading: string }) {
               ))}
             </dl>
             <p className="text-sm text-[var(--text-muted)] mt-4">
-              Only 1,000,000 VIBE are offered in this demo sale. Maximum supply of VIBE is 1 billion.
+              1,000,000 VIBE is set aside for this event. It covers the sale and the rewards for signing up, checking in and inviting people in Alpha GO, so both end when it runs out. Maximum supply of VIBE is 1 billion.
               VIBE can only be bought inside Alpha GO.
             </p>
           </div>
